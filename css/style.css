@@ -6,18 +6,18 @@ body {
     font-family: "Input Mono Narrow Regular", "Input Mono Narrow Regular", monospace;
     font-size: 14px;
     display:flex;
+    flex-direction: column;
     flex-wrap: wrap;
 }
 .nav-wrap{
-flex-basis:15rem;
- flex-grow:1;
  position:relative;
 }
 main{
     flex-basis:0;
-    flex-grow:999;
+    flex-grow:1;
+    margin: 0 auto;
     min-width:66%;
-   /* display:flex;
+   /*display:flex;
     flex-direction:column;
     padding-bottom:0*/
 }
@@ -55,14 +55,32 @@ main{
     img {
         width: 100%;
         height: auto;
+      
     }
 
+.gallery {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+.gallery a {
+    margin: 30px 0;
+}
+
 @media (min-width: 700px) {
-    .gallery {
-    display:flex;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-gap: 16px;
-      margin-bottom: 16px;
+    body {
+        flex-direction: row;
     }
+    .gallery {
+      flex-direction: row;
+    }
+    .gallery a {
+        flex: 30%;
+        margin: 15px;
+    }
+   
   }
