@@ -3,14 +3,41 @@
 body {
     background: #ffffff;
     color: #444444;
-    font-family: "Input Mono Narrow Regular", "Input Mono Narrow Regular", monospace;
+    font-family: "Input Mono Narrow Bold", "Input Mono Narrow Regular", monospace;
     font-size: 14px;
     display:flex;
     flex-direction: column;
     flex-wrap: wrap;
 }
+.cv-list{
+    display:block;
+    margin-left: 80px;
+    margin-right:40px;
+    margin-top:80px;
+
+}
+.contact-info{
+
+    display:flex;
+    flex-direction: column;
+    margin-bottom:60px;
+    text-align: right;
+    margin-right:80px;
+
+}
+.email{
+    margin-bottom:20px;
+}
+h2{
+    margin-top: 40px;
+    margin-bottom:20px
+}
+ul{
+    margin-bottom: 40px;
+}
 .nav-wrap{
  position:relative;
+ 
 }
 main{
     flex-basis:0;
@@ -20,6 +47,20 @@ main{
    /*display:flex;
     flex-direction:column;
     padding-bottom:0*/
+}
+.nav-wrap ul {
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+@media (min-width:700px){
+    .nav-wrap ul{
+        flex-direction:column;
+    }
+}
+.nav-wrap{
+    padding-right: 20px;
+    margin-left:20px;
 }
 
     ul {
@@ -41,13 +82,13 @@ main{
     transition: font-size ease-in-out 130ms;  
     }
 
-    li a {
+     a {
     color:#444444;
     transition: color ease-in 130ms;
     text-decoration: underline;
     }
 
-    li a:hover{
+     a:hover{
     transition: color ease-in 130ms;
     color:#1c8a86;
     }
@@ -64,6 +105,9 @@ main{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    margin-right:20px;
+    margin-left:20px;
+    margin-top:40px;
     
 }
 
@@ -77,6 +121,7 @@ main{
     }
     .gallery {
       flex-direction: row;
+      align-items:flex-end;
     }
     .gallery a {
         flex: 30%;
