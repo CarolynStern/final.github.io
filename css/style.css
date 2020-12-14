@@ -23,8 +23,11 @@ body {
     margin-bottom:60px;
     text-align: right;
     margin-right:80px;
+    padding:20px;
 
 }
+
+
 .email{
     margin-bottom:20px;
 }
@@ -81,12 +84,17 @@ main{
     li:hover{
     transition: font-size ease-in-out 130ms;  
     }
+    
+    h1 a {
+    text-decoration: none;
+}
 
      a {
     color:#444444;
     transition: color ease-in 130ms;
     text-decoration: underline;
     }
+
 
      a:hover{
     transition: color ease-in 130ms;
